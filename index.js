@@ -1,4 +1,4 @@
-// Array to store all guests
+
 let guests = [];
 const MAX_GUESTS = 10;
 

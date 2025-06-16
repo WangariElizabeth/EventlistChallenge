@@ -24,7 +24,16 @@ Browser Compatibility
     -fork
     -copy the ssh url
     -Go to your terminal
-    -type git clone
+    -type git clone then paste the ssh url
+    - open your code editor by typing code .
+    - open the code in the browser
+      
+   SUPPORT AND CONTACT DETAILS
+If you have any questions, suggestions, or need assistance, please contact:
+
+Email: elizabeth.njuguna1@student.moringaschool.com
+
+
     
 
 

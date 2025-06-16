@@ -22,7 +22,9 @@ Browser Compatibility
   - git clone this repository:
     follow this steps:
     -fork
-    -select the ssh link 
+    -copy the ssh url
+    -Go to your terminal
+    -type git clone
     
 
 

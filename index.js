@@ -1,8 +1,7 @@
 
 let guests = [];
-const MAX_GUESTS = 10;
+const MAX_GUESTS = 10
 
-//  DOM elements
 const guestForm = document.getElementById('guestForm');
 const guestNameInput = document.getElementById('guestName');
 const guestCategorySelect = document.getElementById('guestCategory');
@@ -10,19 +9,16 @@ const guestList = document.getElementById('guestList');
 const guestCounter = document.getElementById('guestCounter');
 const emptyState = document.getElementById('emptyState');
 
-// Initialize the app when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, initializing guest list manager');
+    console.log('DOMloaded, initializing guest list manager');
     updateGuestCounter();
     updateEmptyState();
     
-    // Add form submit event listener
     guestForm.addEventListener('submit', handleFormSubmit);
 });
 
-// Handle form submission
 function handleFormSubmit(event) {
-    // Prevent default form submission
+    
     event.preventDefault();
     console.log('Form submitted');
     
@@ -57,7 +53,7 @@ function handleFormSubmit(event) {
 function addGuest(name, category) {
     console.log('Adding guest:', name, category);
     
-    // Create guest object
+    // guest object
     const guest = {
         id: Date.now(), // Simple ID using timestamp
         name: name,
@@ -70,7 +66,7 @@ function addGuest(name, category) {
     guests.push(guest);
     console.log('Current guests:', guests);
     
-    // Update UI
+    // Update for the  User Interface
     renderGuestList();
     updateGuestCounter();
     updateEmptyState();
@@ -89,8 +85,7 @@ function renderGuestList() {
         guestList.appendChild(guestElement);
     });
 }
-
-// Create HTML element for a guest
+//creating guest element
 function createGuestElement(guest) {
     const guestDiv = document.createElement('div');
     guestDiv.className = `guest-item ${guest.rsvp}`;
@@ -119,7 +114,7 @@ function createGuestElement(guest) {
     return guestDiv;
 }
 
-// Toggle RSVP status
+//toggle RSVP status
 function toggleRSVP(guestId) {
     console.log('Toggling RSVP for guest:', guestId);
     
@@ -196,7 +191,7 @@ function updateGuestCounter() {
     console.log('Guest counter updated:', guests.length);
 }
 
-// Update empty state visibility
+ //Update empty state visibility
 function updateEmptyState() {
     if (guests.length === 0) {
         emptyState.style.display = 'block';

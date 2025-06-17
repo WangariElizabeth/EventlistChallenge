@@ -31,6 +31,10 @@ Browser Compatibility
     -type git clone then paste the ssh url
     - open your code editor by typing code .
     - open the code in the browser
+   
+  VIEW IN THE BROWSER
+
+  
       
    SUPPORT AND CONTACT DETAILS
   

@@ -33,8 +33,8 @@ Browser Compatibility
     - open the code in the browser
    
   VIEW IN THE BROWSER
-
   
+  https://wangarielizabeth.github.io/EventlistChallenge/
       
    SUPPORT AND CONTACT DETAILS
   

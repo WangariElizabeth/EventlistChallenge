@@ -1,15 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Georgia', 'Times New Roman', serif;
-    background: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 50%, #ecfdf5 100%);
-    min-height: 100vh;
-    padding: 20px;
-    color: #374151;
+    background-color: lightseagreen;
 }
 
 .container {
@@ -17,32 +9,28 @@ body {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
 
-/* Header styles */
 header {
-    background: linear-gradient(135deg, #f8fafc 0%, #e7e5e4 100%);
+    background-color:beige;
     padding: 40px 30px;
     text-align: center;
     border-bottom: 3px solid #f9a8d4;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 35px;
     color: #be185d;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #7c3aed;
     font-style: italic;
 }
 
-/* Form section styles */
 .form-section {
     background: rgba(252, 231, 243, 0.3);
     padding: 30px;
@@ -60,33 +48,15 @@ label {
     color: #be185d;
 }
 
-input[type="text"], select {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #f9a8d4;
-    border-radius: 12px;
-    font-size: 16px;
-    background: white;
-    transition: all 0.3s ease;
-}
-
-input[type="text"]:focus, select:focus {
-    outline: none;
-    border-color: #be185d;
-    box-shadow: 0 0 0 3px rgba(190, 24, 93, 0.1);
-    transform: translateY(-2px);
-}
-
 .submit-btn {
-    background: linear-gradient(135deg, #be185d 0%, #7c3aed 100%);
-    color: white;
+    background-color: #c4b5fd;
+    color:black;
     padding: 15px 30px;
     border: none;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(190, 24, 93, 0.3);
 }
 
@@ -103,7 +73,6 @@ input[type="text"]:focus, select:focus {
     font-size: 18px;
 }
 
-/* Guest list section */
 .guest-list-section {
     padding: 30px;
 }
@@ -114,8 +83,6 @@ input[type="text"]:focus, select:focus {
     font-size: 1.8rem;
     text-align: center;
 }
-
-/* Individual guest item */
 .guest-item {
     background: white;
     border: 2px solid #f9a8d4;
@@ -130,61 +97,15 @@ input[type="text"]:focus, select:focus {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
-
-.guest-item.not-attending {
-    opacity: 0.7;
-    border-color: #d1d5db;
-}
-
-.guest-info {
-    margin-bottom: 15px;
-}
-
-.guest-name-section {
-    margin-bottom: 10px;
-}
-
-.guest-name {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #374151;
-}
-
-.edit-input {
-    font-size: 1.3rem;
-    font-weight: bold;
-    border: 2px solid #be185d;
-    border-radius: 8px;
-    padding: 5px 10px;
-}
-
-
 .category-tag {
     display: inline-block;
     padding: 6px 12px;
     border-radius: 20px;
-    font-size: 0.9rem;
     font-weight: bold;
     margin-right: 10px;
-    text-transform: capitalize;
-}
+    background-color: #f9a8d4;
+    border: 2px solid #c4b5fd
 
-.category-tag.friend {
-    background: #fce7f3;
-    color: #be185d;
-    border: 2px solid #f9a8d4;
-}
-
-.category-tag.family {
-    background: #f3e8ff;
-    color: #7c3aed;
-    border: 2px solid #c4b5fd;
-}
-
-.category-tag.colleague {
-    background: #ecfdf5;
-    color: #059669;
-    border: 2px solid #a7f3d0;
 }
 
 .added-time {
@@ -193,21 +114,10 @@ input[type="text"]:focus, select:focus {
     font-style: italic;
 }
 
-/* Action buttons */
 .guest-actions {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-}
-
-.rsvp-btn, .edit-btn, .save-btn, .delete-btn {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .rsvp-btn.attending {
@@ -234,61 +144,4 @@ input[type="text"]:focus, select:focus {
     border: 2px solid #fca5a5;
 }
 
-.rsvp-btn:hover, .edit-btn:hover, .save-btn:hover, .delete-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 
-/* Empty state */
-.empty-state {
-    text-align: center;
-    padding: 40px 20px;
-    color: #6b7280;
-    font-style: italic;
-    font-size: 1.1rem;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        border-radius: 15px;
-    }
-    
-    header {
-        padding: 30px 20px;
-    }
-    
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    .form-section, .guest-list-section {
-        padding: 20px;
-    }
-    
-    .guest-actions {
-        flex-direction: column;
-    }
-    
-    .rsvp-btn, .edit-btn, .save-btn, .delete-btn {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-}
-
-/* Animation for new guests */
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.guest-item {
-    animation: slideIn 0.5s ease-out;
-}
